@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daniela-zc.github.io/french-coach/sitemap-index.xml

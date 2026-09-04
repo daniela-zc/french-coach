@@ -1,0 +1,23 @@
+{
+  "name": "french-coach",
+  "version": "1.0.0",
+  "description": "Practice natural conversational French with concise corrections, idiomatic translation, explanations, exercises, and review.",
+  "author": {
+    "name": "danieazc",
+    "email": "danieazc@gmail.com",
+    "url": "https://github.com/daniela-zc"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "French Coach",
+    "shortDescription": "Practice natural, accurate conversational French",
+    "longDescription": "A practical French coach for learners who want clearer, more idiomatic everyday French. Get concise corrections, natural translations, useful explanations, conversation practice, targeted exercises, and reviews that preserve your intended meaning and register.",
+    "developerName": "danieazc",
+    "category": "Education",
+    "capabilities": [],
+    "brandColor": "#102A4C",
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png",
+    "defaultPrompt": "Help me practice French, correct important mistakes, and express myself more naturally without changing my meaning."
+  }
+}

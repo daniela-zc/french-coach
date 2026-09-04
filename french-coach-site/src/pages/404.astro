@@ -1,0 +1,16 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="Page not found — French Coach" description="The requested French Coach page could not be found.">
+  <section class="page-shell flex min-h-[62vh] items-center py-20">
+    <div class="max-w-2xl">
+      <p class="eyebrow">404 · Page not found</p>
+      <h1 class="mt-6 font-display text-5xl leading-tight text-navy sm:text-7xl">Cette page s’est éclipsée.</h1>
+      <p lang="en" class="mt-6 text-lg leading-8 text-ink/70">The page you requested is not here. The French Coach home page is a good place to begin again.</p>
+      <p lang="es" class="mt-3 text-lg leading-8 text-ink/70">La página que buscas no está aquí. Puedes volver al inicio de French Coach.</p>
+      <a class="mt-8 inline-flex rounded-sm bg-burgundy px-6 py-3.5 text-sm font-semibold text-white no-underline" href={withBase('/')}>Return home · Volver al inicio</a>
+    </div>
+  </section>
+</SiteLayout>

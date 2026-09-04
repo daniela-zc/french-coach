@@ -1,0 +1,24 @@
+---
+import { withBase } from '../lib/paths';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-navy/15 bg-navy text-ivory">
+  <div class="page-shell grid gap-8 py-10 sm:grid-cols-2 sm:items-end">
+    <div>
+      <p class="font-display text-2xl">French Coach</p>
+      <p class="mt-2 max-w-md text-sm leading-6 text-ivory/75">Educational support for more natural, thoughtful French.</p>
+    </div>
+    <div class="sm:text-right">
+      <nav aria-label="Footer navigation">
+        <ul class="flex flex-wrap gap-5 sm:justify-end">
+          <li><a href={withBase('/support/')}>Support</a></li>
+          <li><a href={withBase('/privacy/')}>Privacy</a></li>
+          <li><a href={withBase('/terms/')}>Terms</a></li>
+        </ul>
+      </nav>
+      <p class="mt-5 text-xs text-ivory/60">© {year} danieazc</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,76 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import BilingualBlock from '../components/BilingualBlock.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+import ExampleCard from '../components/ExampleCard.astro';
+import { withBase } from '../lib/paths';
+---
+
+<SiteLayout title="French Coach — French that sounds like you" description="Bilingual coaching for B2 French learners who want more natural conversation, phrasing, and explanations.">
+  <section class="page-shell grid min-h-[70vh] items-center gap-12 py-16 lg:grid-cols-[1fr_0.7fr] lg:py-24">
+    <div class="max-w-3xl">
+      <p class="eyebrow">French for real conversations</p>
+      <h1 class="mt-6 max-w-4xl font-display text-5xl leading-[0.98] tracking-tight text-navy sm:text-7xl lg:text-8xl">French that sounds like you.</h1>
+      <div class="mt-9 grid max-w-2xl gap-6 text-lg leading-8 text-ink/75 sm:grid-cols-2">
+        <p lang="en">A thoughtful coach for B2 learners ready to move from correct French to natural French.</p>
+        <p lang="es">Un acompañamiento atento para estudiantes B2 que quieren pasar de un francés correcto a uno natural.</p>
+      </div>
+      <a class="mt-10 inline-flex rounded-sm bg-burgundy px-6 py-3.5 text-sm font-semibold text-white no-underline transition-transform hover:-translate-y-0.5" href="#examples">See how it works</a>
+    </div>
+    <div class="mx-auto w-full max-w-sm lg:max-w-md">
+      <div class="aspect-square rounded-full border border-navy/10 bg-paper p-7 shadow-editorial">
+        <img class="h-full w-full object-contain" src={withBase('/logo.png')} alt="French Coach conversation mark" width="480" height="480" />
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <BilingualBlock label="What it helps you do · En qué te ayuda">
+      <div slot="english">
+        <h2 class="font-display text-4xl text-navy sm:text-5xl">Speak with more ease, precision, and personality.</h2>
+      </div>
+      <div slot="spanish">
+        <h2 class="font-display text-4xl text-navy sm:text-5xl">Habla con más soltura, precisión y personalidad.</h2>
+      </div>
+    </BilingualBlock>
+
+    <section class="grid gap-10 py-8 md:grid-cols-3 md:py-14">
+      <FeatureCard number="01" title="Conversation practice" text="Practice realistic exchanges and get feedback that respects your level, intention, and context." />
+      <FeatureCard number="02" title="Natural phrasing" text="Turn technically correct sentences into French that feels more idiomatic and genuinely yours." />
+      <FeatureCard number="03" title="Clear explanations" text="Understand grammar, vocabulary, and nuance in plain English or Spanish—with targeted exercises when useful." />
+    </section>
+
+    <section id="examples" class="scroll-mt-8 py-20">
+      <div class="max-w-2xl">
+        <p class="eyebrow">In practice · En la práctica</p>
+        <h2 class="mt-4 font-display text-4xl text-navy sm:text-6xl">Small changes. More natural French.</h2>
+        <p lang="es" class="mt-5 text-lg leading-8 text-ink/70">Pequeños cambios. Un francés más natural.</p>
+      </div>
+      <div class="mt-12 grid gap-6 lg:grid-cols-2">
+        <ExampleCard before="Je suis intéressé de connaître ton avis." after="Ça m'intéresserait de connaître ton avis." note="The revision keeps the meaning while using a more idiomatic structure. · La revisión conserva la idea con una estructura más idiomática." />
+        <ExampleCard before="On peut se voir dans le week-end ?" after="On peut se voir ce week-end ?" note="A concise correction, with room to discuss regional alternatives when they matter. · Una corrección concisa, con variantes regionales cuando sean relevantes." />
+      </div>
+    </section>
+
+    <BilingualBlock label="Language has a place · La lengua tiene contexto">
+      <div slot="english" class="space-y-5">
+        <h2 class="font-display text-4xl text-navy">No single French is universal.</h2>
+        <p class="leading-8 text-ink/75">French Coach identifies regional differences when they matter—from France to Québec and beyond—rather than presenting one variety as the only correct form.</p>
+      </div>
+      <div slot="spanish" class="space-y-5">
+        <h2 class="font-display text-4xl text-navy">No existe un único francés universal.</h2>
+        <p class="leading-8 text-ink/75">French Coach señala diferencias regionales cuando son relevantes—de Francia a Quebec y más allá—sin presentar una variedad como la única correcta.</p>
+      </div>
+    </BilingualBlock>
+
+    <section class="my-16 rounded-sm bg-navy px-6 py-10 text-ivory sm:px-10 lg:flex lg:items-end lg:justify-between lg:gap-12">
+      <div class="max-w-3xl">
+        <p class="text-xs font-semibold tracking-[0.18em] text-ivory/60 uppercase">Use thoughtfully · Uso responsable</p>
+        <p lang="en" class="mt-5 font-display text-2xl leading-snug sm:text-3xl">French Coach is educational assistance, not a certification program.</p>
+        <p lang="es" class="mt-4 text-sm leading-7 text-ivory/75">Es una herramienta educativa, no un programa de certificación.</p>
+        <p class="mt-5 max-w-2xl text-sm leading-7 text-ivory/75">Important legal, medical, immigration, academic, or professional wording needs human review. · Los textos legales, médicos, migratorios, académicos o profesionales importantes requieren revisión humana.</p>
+      </div>
+      <a class="mt-8 inline-flex shrink-0 text-sm font-semibold decoration-burgundy decoration-2 lg:mt-0" href={withBase('/support/')}>Visit support</a>
+    </section>
+  </div>
+</SiteLayout>

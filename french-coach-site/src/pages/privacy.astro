@@ -1,0 +1,28 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import LegalSection from '../components/LegalSection.astro';
+---
+
+<SiteLayout title="Privacy — French Coach" description="The bilingual privacy notice for French Coach.">
+  <div class="page-shell">
+    <header class="max-w-3xl py-16 sm:py-24">
+      <p class="eyebrow">Privacy · Privacidad</p>
+      <h1 class="mt-5 font-display text-5xl text-navy sm:text-7xl">A deliberately simple privacy boundary.</h1>
+      <p class="mt-6 text-sm text-ink/60">Last updated: September 2, 2026</p>
+    </header>
+
+    <LegalSection lang="en" label="English" title="Privacy notice">
+      <p>French Coach does not operate its own server, login, authentication system, analytics, cookies, database, or independent data collection. The plugin does not maintain a separate user account or profile.</p>
+      <p>Your conversations are processed within ChatGPT by OpenAI. That processing is governed by OpenAI's own terms, privacy policies, product settings, and data controls. French Coach does not control or replace those policies.</p>
+      <p>Because French Coach has no independent backend, it does not receive or store a separate copy of your conversations. Avoid sharing sensitive personal information unless it is necessary and appropriate for your use of ChatGPT.</p>
+      <p>Privacy questions about French Coach can be sent to <a href="mailto:danieazc@gmail.com">danieazc@gmail.com</a>. Questions about ChatGPT data handling should be directed to OpenAI through its official support and privacy channels.</p>
+    </LegalSection>
+
+    <LegalSection lang="es" label="Español" title="Aviso de privacidad">
+      <p>French Coach no opera un servidor, inicio de sesión, sistema de autenticación, analítica, cookies, base de datos ni recopilación de datos independientes. El plugin no mantiene una cuenta ni un perfil de usuario separado.</p>
+      <p>Tus conversaciones se procesan dentro de ChatGPT por OpenAI. Ese procesamiento se rige por los términos, políticas de privacidad, ajustes del producto y controles de datos de OpenAI. French Coach no controla ni sustituye esas políticas.</p>
+      <p>Como French Coach no tiene un backend independiente, no recibe ni almacena una copia separada de tus conversaciones. Evita compartir información personal sensible salvo que sea necesario y apropiado para tu uso de ChatGPT.</p>
+      <p>Puedes enviar preguntas de privacidad sobre French Coach a <a href="mailto:danieazc@gmail.com">danieazc@gmail.com</a>. Las preguntas sobre el tratamiento de datos de ChatGPT deben dirigirse a OpenAI mediante sus canales oficiales de soporte y privacidad.</p>
+    </LegalSection>
+  </div>
+</SiteLayout>

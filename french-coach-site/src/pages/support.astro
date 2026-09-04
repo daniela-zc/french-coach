@@ -1,0 +1,42 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import LegalSection from '../components/LegalSection.astro';
+---
+
+<SiteLayout title="Support — French Coach" description="Help, frequently asked questions, and contact information for French Coach.">
+  <div class="page-shell">
+    <header class="max-w-3xl py-16 sm:py-24">
+      <p class="eyebrow">Support · Ayuda</p>
+      <h1 class="mt-5 font-display text-5xl text-navy sm:text-7xl">Questions deserve clear answers.</h1>
+      <p lang="es" class="mt-6 text-xl leading-8 text-ink/70">Tus preguntas merecen respuestas claras.</p>
+    </header>
+
+    <LegalSection lang="en" label="English" title="Frequently asked questions">
+      <h3>Who is French Coach for?</h3>
+      <p>It is designed primarily for approximately B2 French learners who want to practice conversation, refine phrasing, understand grammar and vocabulary, translate thoughtfully, or work through targeted exercises.</p>
+      <h3>Does it support regional French?</h3>
+      <p>Yes. When a phrase varies by region, French Coach should identify the relevant variety instead of treating one form as universal.</p>
+      <h3>Is it a certification program?</h3>
+      <p>No. French Coach offers educational assistance and does not assess or certify an official language level.</p>
+      <h3>How does privacy work?</h3>
+      <p>French Coach has no independent server, account system, analytics, or data collection. Read the <a href="../privacy/">privacy notice</a> for details about this boundary and ChatGPT processing.</p>
+    </LegalSection>
+
+    <LegalSection lang="es" label="Español" title="Preguntas frecuentes">
+      <h3>¿Para quién es French Coach?</h3>
+      <p>Está pensado principalmente para estudiantes de francés de nivel aproximado B2 que quieren practicar conversación, mejorar su expresión, comprender gramática y vocabulario, traducir con criterio o realizar ejercicios específicos.</p>
+      <h3>¿Incluye variantes regionales?</h3>
+      <p>Sí. Cuando una expresión cambia según la región, French Coach debe señalar la variedad correspondiente en lugar de presentar una forma como universal.</p>
+      <h3>¿Es un programa de certificación?</h3>
+      <p>No. French Coach ofrece apoyo educativo y no evalúa ni certifica oficialmente el nivel de idioma.</p>
+      <h3>¿Cómo funciona la privacidad?</h3>
+      <p>French Coach no tiene servidor, sistema de cuentas, analítica ni recopilación de datos propios. Consulta el <a href="../privacy/">aviso de privacidad</a> para conocer los detalles y la relación con el procesamiento de ChatGPT.</p>
+    </LegalSection>
+
+    <section class="my-12 rounded-sm bg-paper p-7 shadow-editorial sm:p-10">
+      <p class="eyebrow">Contact · Contacto</p>
+      <h2 class="mt-4 font-display text-3xl text-navy">Still need help? · ¿Necesitas ayuda?</h2>
+      <p class="mt-4 leading-8 text-ink/70">Write to <a class="text-link" href="mailto:danieazc@gmail.com">danieazc@gmail.com</a>. Include a concise description of the issue, but do not send sensitive personal information.</p>
+    </section>
+  </div>
+</SiteLayout>

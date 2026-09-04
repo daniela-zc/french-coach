@@ -1,0 +1,6 @@
+french-coach-site/node_modules/
+french-coach-site/dist/
+french-coach-site/.astro/
+french-coach-site/.DS_Store
+french-coach-site/*.log
+.DS_Store

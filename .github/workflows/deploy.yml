@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: french-coach-site
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -25,6 +28,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: french-coach-site/package-lock.json
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
@@ -38,7 +42,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: french-coach-site/dist
 
   deploy:
     environment:

@@ -1,5 +1,5 @@
 # CHANGELOG_HERMES.md
-## Actualización automática — 2026-11-09
+## Actualización automática — 2026-11-16
 
 ### Métricas de errores recolectados
 - subjonctif: 1
